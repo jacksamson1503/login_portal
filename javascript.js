@@ -1,21 +1,23 @@
-<script>
-    const toggleBtn = document.getElementById('togglebtn');
-    const formWrapper = document.getElementById('formwrapper');
-    const toggleHeading = document.getElementById('toggleheading');
-    const toggleText = document.getElementById('toogleText');
+const objectiveText = "System.out.println('Building Scalable Cloud Infrastructure...');";
+let index = 0;
 
-    toggleBtn.addEventListener('click', () => {
-      formWrapper.classList.toggle('active');
-      if (formWrapper.classList.contains('active')) {
-        toggleHeading.textContent = 'Already have an account?';
-        toggleText.textContent = 'Login to your account';
-        toggleBtn.textContent = 'Login';
-        document.querySelector('.signin input').focus();
-      } else {
-        toggleHeading.textContent = "Don't have an account?";
-        toggleText.textContent = 'Sign up to get started!';
-        toggleBtn.textContent = 'Sign up';
-        document.querySelector('.login input').focus();
-      }
+function typeWriter() {
+    const target = document.getElementById("typewriter");
+    if (index < objectiveText.length) {
+        target.innerHTML += objectiveText.charAt(index);
+        index++;
+        setTimeout(typeWriter, 50);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    typeWriter();
+    
+    // Contact Form Logic
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert("Execution Success: Message received by Cloud Infrastructure.");
+        form.reset();
     });
-  </script>
+});

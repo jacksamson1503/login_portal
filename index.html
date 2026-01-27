@@ -1,82 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login & Sign</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;200;300;400;500;600;700;800;900;1,100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="forget-password.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Samson | Cloud & DevOps Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper" id="formwrapper">
-    <div class="form-container login">
-      <h3>Login</h3>
-      <form>
-        <input type="email" placeholder="Email (or) Username" required>
-        <input type="password" placeholder="Password" required>
-        <a href="forget-password.html" class="forget-password">Forget password?</a>
-        <button type="submit" class="submit-btn">Login</button>
-      </form>
-      <div class="social-login">
-        <div class="social-btn google" title="Sign in with Google" aria-label="Sign in with Google">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 11.998v2.998h7.844c-.366 2.354-2.522 6.901-7.844 6.901-4.724 0-8.571-3.909-8.571-8.727s3.847-8.727 8.571-8.727c2.688 0 4.475 1.146 5.507 2.137l1.877-1.801c-2.231-2.071-5.099-3.334-7.384-3.334-6.084 0-11.021 4.955-11.021 11.051s4.937 11.051 11.021 11.051c6.771 0 10.998-4.752 10.998-11.451 0-.769-.084-1.354-.188-1.998h-10.81z"/>
-          </svg>
+    <div class="terminal-container">
+        <div class="terminal-bar">
+            <div class="buttons">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">jack_samson — cloud_engineer — zsh</div>
         </div>
-        <div class="social-btn facebook" title="Sign in with Facebook" aria-label="Sign in with Facebook">
-          <svg viewBox="0 0 24 24">
-            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.326v21.348c0 .73.593 1.326 1.325 1.326h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.622h-3.12v9.294h6.116c.73 0 1.324-.596 1.324-1.326v-21.349c0-.733-.594-1.326-1.325-1.326z"/>
-          </svg>
-        </div>
-      </div>
+
+        <main class="terminal-window">
+            <header>
+                <h1>Jack Samson</h1>
+                <p id="typewriter" class="tagline"></p>
+                <div class="contact-links">
+                    <span>📍 Bangalore </span> | 
+                    <span>📞 9345510701 [cite: 2]</span> | 
+                    <span>📧 <a href="mailto:jacksamsonc@gmail.com">jacksamsonc@gmail.com [cite: 3]</a></span>
+                </div>
+            </header>
+
+            <section class="section">
+                <h2 class="cmd">cat objective.txt [cite: 5]</h2>
+                <p>Motivated Cloud and DevOps enthusiast with hands-on experience as a System Administrator and a solid foundation in infrastructure automation. [cite: 6] I am a quick learner passionate about solving real-world technical challenges. [cite: 8]</p>
+            </section>
+
+            <section class="section">
+                <h2 class="cmd">ls skills/core_stack [cite: 21]</h2>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <h3>Cloud & IaC</h3>
+                        <p>AWS (EC2, S3, IAM, CloudWatch), Terraform. [cite: 23, 31]</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>DevOps Tools</h3>
+                        <p>Jenkins, Docker, Kubernetes, Git/GitHub. [cite: 24, 31]</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>Systems</h3>
+                        <p>Linux, Python, Active Directory, Networking (CCNA-level). [cite: 24, 25, 31]</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="cmd">./show_experience.sh [cite: 9]</h2>
+                <div class="exp-item">
+                    <span class="status-pill">CURRENT</span>
+                    <strong>System Administrator Engineer | Terait Technologies </strong>
+                    <p class="date">Nov 2024 - Present </p>
+                    <ul>
+                        <li>Resolved hardware failures, software bugs, and networking issues like DNS/IP conflicts. [cite: 11]</li>
+                        <li>Created internal troubleshooting guides and visual layouts to improve team efficiency. [cite: 12, 14]</li>
+                        <li>Managed server maintenance, updates, and health checks to ensure uptime. [cite: 15]</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="cmd">cat education.json [cite: 16]</h2>
+                <div class="edu-item">
+                    <strong>B.E. Computer Science and Engineering </strong>
+                    <p>Sri Krishna College of Technology | CGPA: 7.8 (2020-2024) [cite: 18, 19]</p>
+                </div>
+                <div class="edu-item">
+                    <strong>Cloud Computing Certification </strong>
+                    <p>Besant Technologies, Bangalore </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="cmd">./send_message.sh</h2>
+                <form id="contact-form" class="terminal-form">
+                    <div class="form-group">
+                        <label>Guest Name:</label>
+                        <input type="text" name="name" required placeholder="Enter name...">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address:</label>
+                        <input type="email" name="email" required placeholder="Enter email...">
+                    </div>
+                    <div class="form-group">
+                        <label>Message Content:</label>
+                        <textarea name="message" rows="4" required placeholder="Type your message..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">EXECUTE SEND</button>
+                </form>
+            </section>
+        </main>
     </div>
-
-    <div class="form-container signin">
-      <h2>Sign in</h2>
-      <form>
-        <input type="text" placeholder="Username" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder="Confirm Password" required>
-        <label class="accept-terms">
-          <input type="checkbox" required>
-          I accept all terms & conditions
-        </label>
-        <button type="submit" class="submit-btn">Sign up</button>
-      </form>
-    </div>
-
-    <div class="toggle-container">
-      <h2 id="toggleheading">Don't have an account?</h2>
-      <p id="toogleText">Sign up to get started!</p>
-      <button class="switch-btn" id="togglebtn">Sign up</button>
-    </div>
-  </div>
-
-  <script>
-    const toggleBtn = document.getElementById('togglebtn');
-    const formWrapper = document.getElementById('formwrapper');
-    const toggleHeading = document.getElementById('toggleheading');
-    const toggleText = document.getElementById('toogleText');
-
-    toggleBtn.addEventListener('click', () => {
-      formWrapper.classList.toggle('active');
-      if (formWrapper.classList.contains('active')) {
-        toggleHeading.textContent = 'Already have an account?';
-        toggleText.textContent = 'Login to your account';
-        toggleBtn.textContent = 'Login';
-        document.querySelector('.signin input').focus();
-      } else {
-        toggleHeading.textContent = "Don't have an account?";
-        toggleText.textContent = 'Sign up to get started!';
-        toggleBtn.textContent = 'Sign up';
-        document.querySelector('.login input').focus();
-      }
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
